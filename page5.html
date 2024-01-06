@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The landing page of FindASpot" />
+    <title>FindASpot Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="page5.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <p class="app-logo">
+            <a href="landingpage.html">
+              <img src="images/findaapp_logo.png" alt="logo of FindASpot" />
+            </a>
+          </p>
+        </div>
+        <div class="nav-bar">
+          <p><a href="landingpage.html">Home</a></p>
+          <p><a href="webpg4.html">Profile</a></p>
+          <p><a href="spotlist.php">Search</a></p>
+          <p><a href="signinpage.html">Log In</a></p>
+        </div>
+      </div>
+
+      <div class="background-image">
+        <h1>
+          <b
+            >Here are some of the best student rated places to study on
+            campus!</b
+          >
+        </h1>
+
+        <h2>
+          <b>Be sure to give these places a try if you're trying to study!</b>
+        </h2>
+
+        <div class="pic-border">
+          <div class="Spot1">
+            <p>First Favorite Spot Amongst Students:</p>
+            <br />
+            <p><u>UMBC Library</u></p>
+
+            <img
+              src="images/umbc-library.jpeg"
+              class="library"
+              width="160"
+              height="160"
+              alt="image of umbc library"
+            />
+            <br />
+            <p>
+              Highlights From Students: Great for quiet studying, group
+              planning; Maximum comfort when studying; Little disruption going
+              on.
+            </p>
+            <img src="images/5star.webp" class="Star5" alt="5 star image" />
+          </div>
+          <div class="Spot2">
+            <p>Second Favorite Spot Amongst Students:</p>
+            <br />
+            <p><u>UMBC Commons!</u></p>
+            <img
+              src="images/umbc-commons.jpeg"
+              alt="library"
+              width="160"
+              height="160"
+            />
+            <p>
+              Highlights From Students: Great place to study if you want to eat;
+              Cafe like environment; High traffic area, a lot of different
+              noises
+            </p>
+            <img src="images/4star.png" class="Star4" alt="4 star image" />
+          </div>
+          <div class="Spot3">
+            <p>Third Favorite Spot Amongst Students:</p>
+            <br />
+            <p><u>UMBC Interdisciplinary Life Sciences Building</u></p>
+            <img
+              src="images/umbc-islb.jpeg"
+              alt="library"
+              width="160"
+              height="160"
+            />
+            <p>
+              Highlights: Newest building; Great views; Multiple individual
+              study rooms; Moderate traffic depending on hour.
+            </p>
+            <img src="images/3star.webp" class="Star3" alt="3 star image" />
+          </div>
+          <p class="spacer"></p>
+          <div class="extra">
+            <p>
+              <b></b>
+            </p>
+            <p>
+              <b
+                >Thank you for using our app! Please leave your own rating down
+                below and let others know about your experiences.</b
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <footer>
+          <!-- Left Side Footer -->
+          <div class="contact">
+            <div class="contact-us">
+              <h2 class="contact-heading">
+                Did you visit here? If so feel free to leave your own rating!
+              </h2>
+              <p class="contact-us-info">
+                We deeply value our users and their insights. Please let us know
+                how you felt about the places you've visited or attended by
+                leaving a review. Reviews are what helps the other students with
+                knowing what the best spots are and where they should go based
+                on their specifications. Thank you for using our app and we hope
+                that you return.
+              </p>
+            </div>
+            <p class="spacer"></p>
+            <!-- Right Side Footer -->
+            <div class="contact-form remove-margin-form">
+              <p class="contact-form-info">
+                For any inquiries, feedback, or suggestions, please reach out to
+                us using the form on our home page. We deeply value your
+                suggestions and thank you for helping better our app!
+              </p>
+
+              <form class="review_form.php" action="#" method="POST">
+                <fieldset class="fieldset">
+                  <p>
+                    <script>
+                      function validateUMBCID() {
+                        var umbcIDInput =
+                          document.getElementById("feedback-name");
+                        var umbcID = umbcIDInput.value.trim();
+                        var umbcIDValidationMessage =
+                          document.getElementById("umbcid-validation");
+
+                        // Check if the UMBC ID has 2 letters followed by 5 numbers
+                        if (!/^[a-zA-Z]{2}\d{5}$/.test(umbcId)) {
+                          umbcIDValidationMessage.innerHTML =
+                            "Please enter a valid UMBC ID with 2 letters followed by 5 numbers";
+                        } else {
+                          umbcIDValidationMessage.innerHTML = " ";
+                        }
+                      }
+                    </script>
+                    <label for="feedback-name"
+                      >UMBC ID:
+                      <input
+                        type="text"
+                        placeholder="Enter your UMBC ID"
+                        name="name"
+                        id="feedback-name"
+                        oninput="validateUMBCID()"
+                      />
+                      <span id="umbcid-validation" style="color: red"></span>
+                    </label>
+                    Your Rating of That Place (1-5 with 5 being the best):
+                    <label for="rating-number">
+                      <input
+                        type="number"
+                        name="rating"
+                        min="1"
+                        max="5"
+                        required
+                        placeholder="0"
+                        id="rating-number"
+                      />
+                    </label>
+                    <!--JAVASCRIPT PORTION FOR CHECKING IF THE EMAIL IS A VALID UMBC EMAIL-->
+                    <script>
+                      function validateEmail() {
+                        var emailInput =
+                          document.getElementById("feedback-email");
+                        var email = emailInput.value.trim();
+                        var emailValidationMessage =
+                          document.getElementById("email-validation");
+
+                        // Email checker
+                        if (!email.toLowerCase().endsWith("@umbc.edu")) {
+                          emailValidationMessage.innerHTML =
+                            "Please use your UMBC email, this should end with @umbc.edu thank you!";
+                        } else {
+                          emailValidationMessage.innerHTML = " ";
+                        }
+                      }
+                    </script>
+                    <label for="feedback-email"
+                      >Email:
+                      <input
+                        type="email"
+                        placeholder="Your myUMBC email"
+                        name="email"
+                        id="feedback-email"
+                        oninput="validateEmail()"
+                      />
+                      <span id="email-validation" style="color: red"></span>
+                    </label>
+                    <label for="textarea">
+                      Review:
+                      <textarea
+                        name="message"
+                        id="textarea"
+                        cols="60"
+                        rows="10"
+                        placeholder="Enter Review and location here!"
+                      ></textarea>
+                    </label>
+                  </p>
+                  <p>
+                    <input class="form-submit" type="submit" name="Submit" />
+                  </p>
+                </fieldset>
+              </form>
+            </div>
+            <p class="spacer"></p>
+          </div>
+          <!-- Copyright Information -->
+          <div class="copyright">
+            <p>&copy; Copyright of IS448 Group 8. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

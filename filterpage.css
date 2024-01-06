@@ -1,0 +1,160 @@
+/* STYLING FOR FILTER SIDE BAR */
+
+/* Base styling for the filter sidebar */
+.filter-side {
+  background-color: #fdb515;
+  padding-left: 20px;
+  float: left;
+  width: 19%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+/* Rating section styling */
+.rating-field input {
+  display: inline-block;
+}
+.rating-field img {
+  width: 100px;
+}
+
+/* Distance section styling */
+.distance-field input {
+  display: inline-block;
+}
+/* Styling for the fieldset */
+
+/* Styling for the legend */
+.genre-legend,
+.rating-legend,
+.distance-legend,
+.status-legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+/* Genre dropdown styling */
+.genre-select {
+  width: 80%;
+  padding: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f7f9fb;
+}
+
+/* Status filter styling */
+.status-filter {
+  margin-top: 15px;
+}
+.status-filter input {
+  display: inline-block;
+}
+
+/* filter search bar */
+.filter-search-bar {
+  margin-top: 5px;
+}
+
+/* Base styling for the right-side content area */
+.right-side {
+  float: right;
+  background-color: #88b04b;
+  width: 78%;
+  border-radius: 5px;
+}
+
+.filter-page {
+  overflow: auto;
+  background-color: #f7f9fb;
+}
+
+/* Wrapper for the list of spots */
+.spots-list {
+  overflow: auto;
+  margin-top: 20px;
+  text-align: center;
+  color: #f7f9fb;
+  padding: 10px;
+}
+
+.spots-list a {
+  text-decoration: none;
+  color: #f7f9fb;
+}
+
+/* Base styling for individual spot boxes */
+.box-one,
+.box-two,
+.box-three,
+.box-four,
+.box-five,
+.box-six {
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  overflow: hidden;
+  margin-bottom: 17px;
+  border: 2px solid #fdb515;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ff6f61;
+}
+
+/* Image styling within spot boxes */
+.img-box-size {
+  height: 300px;
+  width: 300px;
+}
+
+/* Removes margin for certain boxes [3],[4] */
+.box-no-margin {
+  margin-right: 0;
+}
+
+/* Styling for the search bar within the content area */
+.filter-search-bar input,
+.filter-search-bar button,
+.filter-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #fdb515;
+  color: #f7f9fb;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 19px;
+}
+
+.filter-search-bar input {
+  width: 600px;
+}
+
+.filter-search-bar button,
+.filter-button {
+  cursor: pointer;
+  font-size: 19px;
+  background-color: #4681f4;
+}
+
+.spot-rating img {
+  width: 100px;
+  height: 40px;
+}
+
+.filter-button {
+  background-color: #4681f4;
+  width: 80%;
+}
+.next-page {
+  padding: 13px;
+}
+.next-page p,
+a {
+  color: #f7f9fb;
+  text-align: center;
+}
+.next-page a {
+  text-decoration: none;
+}

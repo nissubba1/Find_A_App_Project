@@ -1,0 +1,218 @@
+/* Global Styles */
+/* Reset the default padding and margin for all elements */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Set global typography and background color for the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #f7f9fb;
+}
+
+/* Container Styles */
+/* Main container that encapsulates all the page content */
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #1e3d58;
+  background-color: #e6f4f5;
+  max-width: 1200px;
+  border-radius: 5px;
+}
+/* Header Styles */
+.header {
+  margin-bottom: 20px;
+  overflow: hidden;
+  /* background-color: #f7f9fb; */
+  background-color: #ff6f61;
+  border-radius: 5px;
+}
+
+/* Logo within the header */
+.app-logo img {
+  width: 400px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20%;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+  text-align: right;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 79.5%;
+}
+
+.nav-bar p {
+  display: inline-block;
+  margin: 0;
+}
+
+/* Style for nav links, search input, and buttons in nav and search bar */
+.nav-bar a,
+.larger-search-bar input,
+.larger-search-bar button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4681f4;
+  color: #f7f9fb;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Individual input and button styles */
+.larger-search-bar input {
+  background-color: #fdb515;
+  color: #f7f9fb;
+}
+
+.larger-search-bar button {
+  cursor: pointer;
+  font-size: 19px;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fdb515;
+  overflow: hidden;
+  border-radius: 5px;
+}
+/* Footer Style to Align Them */
+.contact-us,
+.contact-form {
+  width: 48.5%;
+  float: left;
+  margin-right: 2px;
+  text-align: justify;
+}
+
+/* Set the text to center */
+.contact-heading {
+  text-align: center;
+}
+
+/* Footer Right Side float to Righ */
+.contact-form {
+  float: right;
+}
+
+/* Remove margin from the Footer Right Side */
+.remove-margin-from {
+  margin-right: 0;
+}
+
+/* Form Styles */
+form.footer_form {
+  text-align: left;
+  /* overflow: hidden; */
+}
+
+/* Remove border from fieldset */
+fieldset {
+  border: none;
+}
+
+/* Style the form buttons */
+label,
+input,
+textarea {
+  display: block;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Style the input and textarea button */
+.fieldset input,
+.fieldset textarea,
+.submit-review {
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+.submit-review {
+  cursor: pointer;
+}
+
+.spacer {
+  clear: right;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+/* Copyright Styles */
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Make the size of the box bigger */
+#feedback-name,
+#feedback-email {
+  padding-right: 50px;
+}
+
+/*--  Table 1 */
+.t1 {
+  border: 2px solid black;
+  width: 500px;
+  float: left;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0 40px;
+  height: 500px;
+  background-color: #fdb515;
+}
+
+/*--  Table 3 and 4 */
+.t3 {
+  border: 2px solid black;
+  width: 330px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-align: center;
+  padding: 0 40px;
+  height: 245px;
+  background-color: #ff6f61;
+}
+.t4 {
+  border: 2px solid black;
+  width: 330px;
+  margin: 0 auto;
+  height: 245px;
+  text-align: center;
+  padding: 0 40px;
+  font-size: 25px;
+  background-color: #ff6f61;
+}
+
+/*--  Table 2 */
+.t2 {
+  border: 2px solid black;
+  width: 250px;
+  float: right;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 500px;
+  background-color: #fdb515;
+}

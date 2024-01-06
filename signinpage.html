@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FindASpot Sign In</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign in to your FindASpot account" />
+
+    <!-- Styles and Fonts -->
+    <link rel="stylesheet" href="layoutpage4.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="topicon.png" />
+    <script>
+      // Client-side input validation
+      function validateForm() {
+        var email = document.forms["signInForm"]["email"].value;
+        var password = document.forms["signInForm"]["password"].value;
+
+        if (email === "" || password === "") {
+          alert("Please fill in all fields.");
+          return false;
+        }
+        return true;
+      }
+
+      // DOM manipulation (changing background color)
+      function changeBackgroundColor() {
+        var form = document.forms["signInForm"];
+        form.style.backgroundColor = "#e6f7ff";
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Header for Logo and Nav Bar -->
+      <div class="header">
+        <div class="logo">
+          <p class="app-logo">
+            <a href="landingpage.html">
+              <img src="findaapp_logo.png" alt="logo of FindASpot" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Sign-In Form -->
+      <div>
+        <form
+          method="POST"
+          action="signinpage.php"
+          name="signInForm"
+          onsubmit="return validateForm();"
+        >
+          <fieldset class="fieldset">
+            <h2>Sign In</h2>
+            <p>
+              <label> Email:</label>
+              <input type="text" name="email" size="25" maxlength="20" />
+            </p>
+            <p>
+              <label> Password:</label>
+              <input type="password" name="password" size="35" maxlength="20" />
+            </p>
+            <input
+              type="submit"
+              value="Log In"
+              onclick="changeBackgroundColor();"
+            />
+          </fieldset>
+        </form>
+        <p>
+          Don't Have An Account? <a href="SignUpFinal.html"> Sign Up Here </a>
+        </p>
+      </div>
+
+      <!-- Spacer for separating content -->
+      <p class="spacer"></p>
+
+      <!-- Footer -->
+      <div class="footer">
+        <footer>
+          <!-- Left Side Footer -->
+          <div class="contact">
+            <div class="contact-us">
+              <h2 class="contact-heading">Contact Us</h2>
+              <p class="contact-us-info">
+                We deeply value our users and their insights. If you have any
+                questions about how to use our app, or if you'd like to share
+                suggestions for improvement, or even if you just want to send us
+                some feedback on your experience, please don't hesitate to
+                contact us.
+              </p>
+            </div>
+            <p class="spacer"></p>
+          </div>
+          <!-- Right Side Footer -->
+          <div class="contact-form remove-margin-form">
+            <p class="contact-form-info">
+              For any inquiries, feedback, or suggestions, please reach out to
+              us using the form below. We value your input and will get back to
+              you as soon as possible.
+            </p>
+            <form class="footer-form" action="submit_review.php" method="POST">
+              <fieldset class="fieldset">
+                <p>
+                  <label for="feedback-name"
+                    >Name:
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      name="reviewName"
+                      id="feedback-name"
+                      required
+                    />
+                  </label>
+                  <label for="feedback-email"
+                    >Email:
+                    <input
+                      type="email"
+                      placeholder="Please enter your email"
+                      name="reviewEmail"
+                      id="feedback-email"
+                      required
+                    />
+                  </label>
+                  <label for="textarea"
+                    >Message:
+                    <textarea
+                      name="reviewMessage"
+                      id="textarea"
+                      cols="60"
+                      rows="10"
+                      placeholder="Enter message here"
+                      required
+                    ></textarea>
+                  </label>
+                </p>
+              </fieldset>
+              <input
+                class="submit-review"
+                type="submit"
+                value="Submit Review"
+              />
+            </form>
+          </div>
+          <p class="spacer"></p>
+          <!-- Copyright Information -->
+          <div class="copyright">
+            <p>&copy; Copyright of IS448 Group 8. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

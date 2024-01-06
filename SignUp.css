@@ -1,0 +1,147 @@
+/* Universal reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styling */
+.header {
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #ff6f61;
+  border-radius: 5px;
+}
+
+/* Logo styling */
+.logo {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20%;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+  text-align: right;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 79.5%;
+}
+
+/* Links within the navigation bar */
+.nav-bar a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4681f4;
+  color: #f7f9fb;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Paragraphs within the navigation bar */
+.nav-bar p {
+  display: inline-block;
+  margin: 0;
+}
+
+/* Background image section */
+.background-image {
+  background-image: url(images/umbc_campus.jpeg);
+  height: auto;
+  height: 800px;
+  background-size: cover;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 2.5vh;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Logo image within the app */
+.app-logo img {
+  width: 400px;
+}
+
+/* Main container styling */
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #1e3d58;
+  background-color: #e6f4f5;
+  max-width: 1200px;
+  border-radius: 5px;
+}
+
+/* Sign up box styling */
+.signBox {
+  background: rgba(204, 204, 204, 0.5);
+  border: 2px solid #131212;
+  margin-bottom: 25px;
+}
+
+/* Sign-up form styling */
+.sign-up {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Heading 3 styling */
+h3 {
+  padding-top: 30px;
+  color: #ff6f61;
+}
+
+/* Copyright information styling */
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Terms of Service paragraph styling */
+.ToS {
+  font-size: 15px;
+}
+
+/* Register button styling */
+.registerB {
+  background-color: #27c906;
+  color: white;
+  padding: 15px 15px;
+  margin: 20px;
+  width: 90%;
+  opacity: 0.8;
+  cursor: pointer;
+  font-size: 30px;
+}
+.fieldset {
+  border: none;
+}
+label {
+  font-weight: bold;
+}
+.sign-up .fieldset p {
+  margin: 20px;
+  text-align: center;
+}
+
+/* Hover effect for register button */
+.registerB:hover {
+  opacity: 1;
+}
+
+.placeholder {
+  font-style: italic;
+}
+
+.sign-up input {
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+}

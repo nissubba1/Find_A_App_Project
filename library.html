@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FindASpot/Library</title>
+
+    <link rel="icon" type="image/x-icon" href="image/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="library.css" title="style" />
+    <link rel="stylesheet" type="text/css" href="main.css" title="style" />
+    <script type="text/javascript" src="library.js"></script>
+    <script>
+      function validateForm() {
+        var review = document.getElementById("newreviews").value.trim();
+
+        if (review === "") {
+          alert("Please fill in the review field to submit");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--First box -->
+    <!-- First box -->
+    <div class="container">
+      <div class="header">
+        <a href="landingpage.html">
+          <div>
+            <img
+              class="FindASpot"
+              src="images/findaapp_logo.png"
+              alt="logo"
+              width="400"
+            />
+          </div>
+        </a>
+        <div style="float: right" class="button">
+          <div style="float: right">
+            <p>
+              <a href="spotlist.php">Search</a>
+            </p>
+          </div>
+          <div style="float: right">
+            <p><a href="signinpage.html">Log Out</a></p>
+          </div>
+          <div style="float: right">
+            <p>
+              <a href="webpg4.html">Profile</a>
+            </p>
+          </div>
+          <div style="float: right">
+            <p>
+              <a href="landingpage.html">Home</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second box -->
+      <div class="middle">
+        <div class="boxes">
+          <div class="box1">
+            <div class="rlc">
+              <img
+                class="rlc"
+                src="images/rlc.jpg"
+                alt="rlc"
+                width="300"
+                height="350"
+              />
+            </div>
+            <br />
+            <div class="feature">
+              <p>Add to favorite</p>
+            </div>
+            <br />
+            <form
+              name="info"
+              action="library.php"
+              method="post"
+              onsubmit="return validateForm()"
+            >
+              <label for="newreviews">Review:</label>
+              <div class="feature">
+                <p>Write a Review</p>
+                <textarea id="newreviews" name="newreviews" rows="5" cols="35">
+                </textarea>
+              </div>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+
+          <div class="box2">
+            <h2>UMBC Library</h2>
+            <p>
+              The UMBC Library is a cool place on campus to study. It has tons
+              of books, comfy chairs, and quiet spaces. Whether you're studying
+              alone or with friends, there's a spot for you. The people working
+              there are friendly and can help you find what you need. Plus,
+              there are computers and online stuff to help with your work. So,
+              if you want a great place to study at UMBC, the library is the
+              place to go!
+            </p>
+            <h4>Current Hours</h4>
+            <img
+              class="schedule"
+              src="images/schedule.jpg"
+              alt="schedule"
+              width="500"
+              height="250"
+            />
+          </div>
+
+          <div class="box3">
+            <a
+              href="https://www.google.com/maps/place/Albin+O.+Kuhn+Library+and+Gallery/@39.2559625,-76.714566,15.83z/data=!4m6!3m5!1s0x89c81dca9ecc71bb:0x6cec497c54772769!8m2!3d39.256617!4d-76.711465!16s%2Fm%2F0z8980j?entry=ttu"
+            >
+              <div class="aok">
+                <img
+                  class="map"
+                  src="images/aokmap.jpg"
+                  alt="map"
+                  width="300"
+                  height="400"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Third box -->
+        <h4>Reviews:</h4>
+
+        <div class="review">
+          <p>Prof. Zaidi:</p>
+          <p>Amazing place to study! I recommend my students to go here</p>
+          <p>
+            <img
+              class="stars"
+              src="images/stars.jpg"
+              alt="stars"
+              width="100"
+              height="20"
+            />
+          </p>
+        </div>
+      </div>
+      <div class="yellow">
+        <a
+          href="https://www.google.com/maps/place/Walker+Avenue+Garage,+Baltimore,+MD+21250/@39.2573135,-76.7149596,17z/data=!3m1!4b1!4m6!3m5!1s0x89c81dcac2268d6f:0x6857ae9f7114a179!8m2!3d39.2572902!4d-76.7124574!16s%2Fg%2F11bvtb9414?entry=ttu"
+        >
+          <p>
+            <img
+              class="spots"
+              src="images/spots.png"
+              alt="spots"
+              width="300"
+              height="300"
+            />
+          </p>
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <span class="text"
+          >Lot 6, Lot 7, and Walker parking garage are the best spots to park
+          near the library. Keep in mind that it is reserved for on-campus
+          students. Commuter students may park on the Hilltop Ct street by Lot
+          10 marked with red A's. Commuter designated parking spots are a bit
+          farther and take about 5 extra minutes of walking to the library</span
+        >
+        <a
+          href="https://www.google.com/maps/dir//39.2585887,-76.7141978/@39.2573135,-76.7149596,17z/data=!4m2!4m1!3e0?entry=ttu"
+        >
+          <p>
+            <img
+              class="spots2"
+              src="images/spots2.png"
+              alt="spots2"
+              width="450"
+              height="300"
+            />
+          </p>
+        </a>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <footer>
+          <!-- Left Side Footer -->
+          <div class="contact">
+            <div class="contact-us">
+              <h2 class="contact-heading">Contact Us</h2>
+              <p class="contact-us-info">
+                We deeply value our users and their insights. If you have any
+                questions about how to use our app, or if you'd like to share
+                suggestions for improvement, or even if you just want to send us
+                some feedback on your experience, please don't hesitate us.
+              </p>
+            </div>
+            <p class="spacer"></p>
+            <!-- Right Side Footer -->
+            <div class="contact-form remove-margin-form">
+              <p class="contact-form-info">
+                For any inquiries, feedback, or suggestions, please reach out to
+                us using the form below. We value your input and will get back
+                to you as soon as possible.
+              </p>
+              <form class="footer-form" action="#" method="GET">
+                <fieldset class="fieldset">
+                  <p>
+                    <label for="feedback-name"
+                      >Name:
+                      <input
+                        type="text"
+                        placeholder="Enter your name"
+                        name="name"
+                        id="feedback-name"
+                    /></label>
+                    <label for="feedback-email"
+                      >Email:
+                      <input
+                        type="email"
+                        placeholder="Please enter your email"
+                        name="email"
+                        id="feedback-email"
+                    /></label>
+                    <label for="textarea"
+                      >Message:
+                      <textarea
+                        name="message"
+                        id="textarea"
+                        cols="60"
+                        rows="10"
+                        placeholder="Enter message here"
+                      ></textarea>
+                    </label>
+                  </p>
+                  <p>
+                    <input class="form-submit" type="submit" name="Submit" />
+                  </p>
+                </fieldset>
+              </form>
+            </div>
+            <p class="spacer"></p>
+          </div>
+          <!-- Copyright Information -->
+          <div class="copyright">
+            <p>&copy; Copyright of IS448 Group 8. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

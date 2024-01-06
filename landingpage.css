@@ -1,0 +1,87 @@
+/* Background Image Styles */
+.background-image {
+  background-image: url(images/umbc_campus.jpeg);
+  height: auto;
+  max-height: 830px;
+  background-size: cover;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 2.5vh;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Different colors for app's motto spans */
+.motto-span-green {
+  color: #000000;
+}
+
+.motto-span-red {
+  color: #da2128;
+}
+
+.motto-span-blue {
+  color: #fdb515;
+}
+
+/* Selection Box Styles */
+/* Container to hold all the selection boxes */
+.selection-types {
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+/* Individual boxes within the selection types */
+.study-box,
+.picnic-box,
+.relaxation-box,
+.entertainment-box,
+.food-box {
+  float: left;
+  width: 18.4%;
+  margin-right: 2%;
+  overflow: hidden;
+  height: auto;
+  max-height: 270px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+/* Removes margin for the last box to align with others */
+.no-margin {
+  margin-right: 0;
+}
+
+/* Style for the images and text inside the selection boxes */
+a.selection-link {
+  text-decoration: none;
+  color: #daa520;
+  font-size: 1.5vw;
+}
+
+.img-box-size {
+  width: 100%;
+}
+/* Larger Search Bar within Background Image section */
+.larger-search-bar input {
+  width: 50%;
+  font-size: 25px;
+}
+
+/* Larger Search Bar within Background Image section */
+.larger-search-bar button {
+  font-size: 25px;
+}
+
+/* UMBC Logo styles */
+.umbc-logo img {
+  margin-top: 20px;
+  width: 600px;
+  overflow: hidden;
+}

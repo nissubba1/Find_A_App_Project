@@ -1,0 +1,237 @@
+/* Universal reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Added box-sizing for better layout control */
+}
+
+/* Header styling */
+.header {
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #ff6f61;
+  border-radius: 5px;
+}
+
+/* Logo styling */
+.logo {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20%;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+  text-align: right;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 79.5%;
+}
+
+/* Links within the navigation bar */
+.nav-bar a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4681f4;
+  color: #f7f9fb;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Paragraphs within the navigation bar */
+.nav-bar p {
+  display: inline-block;
+  margin: 0;
+}
+
+/* Background image section */
+.background-image {
+  background-image: url(images/umbc-study.jpeg);
+  height: auto;
+  max-height: 900px; /* Changed height to max-height */
+  background-size: cover;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 2.5vh;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Logo image within the app */
+.app-logo img {
+  width: 400px;
+}
+
+/* Main container styling */
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #1e3d58;
+  background-color: #e6f4f5;
+  max-width: 1200px;
+  border-radius: 5px;
+}
+
+h3 {
+  padding-top: 30px;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: rgb(0, 3, 1);
+  font-style: italic;
+  font-size: 40px;
+}
+
+h2 {
+  padding-bottom: 50px;
+  font-style: italic;
+  color: #000000;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Desc {
+  padding-top: 100px;
+}
+
+.Star5 {
+  padding-right: 20px;
+  max-width: 300px;
+}
+.Star4 {
+  padding-top: 60px;
+  max-width: 220px;
+}
+
+.Star3 {
+  padding-top: 70px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.Spot1,
+.Spot2,
+.Spot3 {
+  padding: 10px;
+  margin: 5px auto;
+  border: 2px solid #1e3d58;
+  background-color: #e2e5e5;
+  max-width: 300px;
+  border-radius: 5px;
+  max-height: 500px;
+  float: left;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+
+.extra {
+  padding: 10px;
+  margin: 5px auto;
+  border: 2px solid #1e3d58;
+  background-color: #e2e5e5;
+  max-width: 200px;
+  border-radius: 5px;
+  max-height: 100%;
+  top: 50%;
+  float: right;
+  font-size: 25px;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fdb515;
+  overflow: hidden;
+  border-radius: 5px;
+}
+/* Footer Style to Align Them */
+.contact-us,
+.contact-form {
+  width: 48.5%;
+  float: left;
+  margin-right: 2px;
+  text-align: justify;
+}
+
+/* Set the text to center */
+.contact-heading {
+  text-align: center;
+}
+
+/* Footer Right Side float to Righ */
+.contact-form {
+  float: right;
+}
+
+/* Remove margin from the Footer Right Side */
+.remove-margin-from {
+  margin-right: 0;
+}
+
+/* Form Styles */
+form.footer_form {
+  text-align: left;
+  /* overflow: hidden; */
+}
+
+/* Remove border from fieldset */
+fieldset {
+  border: none;
+}
+
+/* Style the form buttons */
+label,
+input,
+textarea {
+  display: block;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Style the input and textarea button */
+.fieldset input,
+.fieldset textarea {
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.spacer {
+  clear: right;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+/* Copyright Styles */
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Make the size of the box bigger */
+#feedback-name,
+#feedback-email {
+  padding-right: 50px;
+}
+
+.form-submit {
+  cursor: pointer;
+  font-size: 19px;
+}

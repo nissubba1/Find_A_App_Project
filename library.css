@@ -1,0 +1,106 @@
+.button {
+  text-align: right;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 79.5%;
+}
+
+.button p {
+  display: inline-block;
+  margin: 0;
+}
+.button a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4681f4;
+  color: #f7f9fb;
+  border-radius: 5px;
+}
+
+.box2 {
+  margin-right: 1%;
+  overflow: hidden;
+  border: 2px solid #fdb515;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  width: 40%;
+  padding: 10px;
+}
+
+.review {
+  margin-right: 10%;
+  margin-bottom: 17px;
+  border: 2px solid #fdb515;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  width: 40%;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 1%;
+}
+.rlc,
+.aok {
+  border: 2px solid #fdb515;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: block;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid #1e3d58;
+  background-color: #e6f4f5;
+  max-width: 1200px;
+  border-radius: 5px;
+}
+
+.middle {
+  background-color: #88b04b;
+}
+
+.feature {
+  background-color: #d9d9d9;
+  border: 2px solid #fdb515;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.yellow {
+  background-color: #fdb515;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #f7f9fb;
+}
+
+.header {
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #ff6f61;
+  border-radius: 5px;
+}
+
+.text {
+  text-align: center;
+  margin-top: 5%;
+}
